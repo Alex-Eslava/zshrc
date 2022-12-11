@@ -58,8 +58,4 @@ precmd() {
     fi
 }
 
-# ACTIVATING COLORS AND DEFINING COLORS BETWEEN FOLDER/FILES/...
-export CLICOLOR=1
-export LSCOLORS=dxfxcxdxbxegedabagacad
-
 #End of config

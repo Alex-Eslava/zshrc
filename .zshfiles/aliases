@@ -1,7 +1,6 @@
 #===================== Aliases =====================#
 alias hist="history 1"
 alias lal='ls -la'
-alias grep='grep -in --color'
 alias du='du -h'
 alias df='df -h'
 #================== Suffix Aliases =================#

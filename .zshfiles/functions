@@ -1,5 +1,6 @@
 # Functions
 
+# TODO: Move all SSH to ~/.ssh/config OpenSSH SSH config files
 function goec2 ()
 {
 ssh -i ~/.ssh/id_rsa $SSH_USER@$EC2_ID
