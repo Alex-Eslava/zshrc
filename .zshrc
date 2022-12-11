@@ -4,6 +4,16 @@ source $HOME/.zshfiles/aliases
 source $HOME/.zshfiles/functions
 source $HOME/.zshfiles/exports
 
+# History 
+setopt INC_APPEND_HISTORY
+setopt EXTENDED_HISTORY
+
+# AWS extravaganza - use AWS at your own risk
+EC2_ID="foo"
+SSH_USER="bar"
+ML_IP="baz"
+AWS_PROFILE="fuet"
+
 # !! Contents within this block are managed by 'conda init' !!
 # TODO: I really should parametrize this path 
 __conda_setup="$('/Users/FUBAR/opt/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
@@ -19,17 +29,6 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(anaconda ...ENVS)
-
-# History 
-setopt INC_APPEND_HISTORY
-setopt EXTENDED_HISTORY
-
-# AWS extravaganza - use AWS at your own risk
-EC2_ID="foo"
-SSH_USER="bar"
-ML_IP="baz"
-AWS_PROFILE="fuet"
-
 
 # DEFINING COLORS AND PROPMT WITH GIT
 autoload -U colors && colors
