@@ -1,0 +1,6 @@
+# EC2 ssh variables for example
+# - use AWS at your own risk
+EC2_ID="foo"
+SSH_USER="bar"
+EC2_IP="baz"
+AWS_PROFILE="fuet"
