@@ -1,8 +1,8 @@
 #===================== Aliases =====================#
 alias hist="history 1"
-alias lal='ls -la'
-alias du='du -h'
-alias df='df -h'
+alias lal="ls -la"
+alias du="du -h"
+alias df="df -h"
 #================== Suffix Aliases =================#
 alias -s tex=vim
 alias -s txt=vim
@@ -11,7 +11,7 @@ alias -s org=firefox
 alias -s com=firefox
 alias -s in=firefox
 #================= Global Aliases =================#
-alias -g ...='../..'
-alias -g ....='../../..'
-alias -g .....='../../../..'
+alias -g ...="../.."
+alias -g ....="../../.."
+alias -g .....="../../../.."
 #==================================================#

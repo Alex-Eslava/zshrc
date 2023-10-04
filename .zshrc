@@ -9,16 +9,16 @@ source $HOME/.zshfiles/exports
 setopt INC_APPEND_HISTORY
 setopt EXTENDED_HISTORY
 
-# !! Contents within this block are managed by 'conda init' !!
-# TODO: I really should parametrize this path 
-__conda_setup="$('/Users/FUBAR/opt/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+# Works with brew
+CONDA_PATH = /opt/homebrew/bin/conda
+__conda_setup="$('$CONDA_PATH/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
-    if [ -f "/Users/FUBAR/opt/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/Users/FUBAR/opt/anaconda3/etc/profile.d/conda.sh"
+    if [ -f "$CONDA_PATH/etc/profile.d/conda.sh" ]; then
+        . "$CONDA_PATH/etc/profile.d/conda.sh"
     else
-        export PATH="/Users/FUBAR/opt/anaconda3/bin:$PATH"
+        export PATH="$CONDA_PATH/bin:$PATH"
     fi
 fi
 unset __conda_setup
